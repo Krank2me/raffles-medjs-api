@@ -4,7 +4,7 @@ const { API_KEY, BASE } = process.env;
 const base = new Airtable({ apiKey: API_KEY }).base(BASE);
 
 async function getWiners(req, res) {
-  persons = [];
+  const persons = [];
   try {
     base('competitor').select({
       maxRecords: 500,
