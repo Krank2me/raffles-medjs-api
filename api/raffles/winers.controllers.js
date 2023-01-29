@@ -11,7 +11,7 @@ async function getWiners(req, res) {
       view: "Grid view"
   }).eachPage(function page(records, fetchNextPage) {
       records.forEach(function(record) {
-          persons.push(record.get('fullname'));
+          persons.push(record);
       });
       res.status(200).send({ data: persons });
       fetchNextPage();
