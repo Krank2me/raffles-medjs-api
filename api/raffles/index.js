@@ -7,5 +7,4 @@ const router = Router();
 router.post("/addCompetitor", addCompetitor);
 router.get("/getWiners", getWiners);
 
-
 module.exports = router;
